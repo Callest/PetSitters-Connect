@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Use Theme.Material3 for modern compatibility -->
+    <style name="Theme.PetSitters" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Main colors -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorSecondary">@color/teal_200</item>
+
+        <!-- Backgrounds -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/purple_700</item>
+    </style>
+</resources>

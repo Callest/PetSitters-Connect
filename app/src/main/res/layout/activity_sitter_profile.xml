@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Sitter Header -->
+        <TextView
+            android:id="@+id/tv_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sitter Name"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_profile_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="This is where the sitter's bio will appear."
+            android:textSize="16sp" />
+
+        <!-- Messaging Button -->
+        <Button
+            android:id="@+id/btn_message_sitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Message Sitter" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- Review/Comment Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="REVIEWS"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_new_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write a review..."
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btn_post_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Review"
+            android:layout_gravity="end" />
+
+        <!-- This is where the reviews will stack up -->
+        <LinearLayout
+            android:id="@+id/ll_comments_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

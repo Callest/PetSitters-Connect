@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sitter Registration"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/et_sitter_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/et_sitter_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tell us about your experience (Bio)..."
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/et_sitter_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Address (Street, City, State)"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animals You Support:"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Your Primary Specialty:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animals You Support (Select all that apply):"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox android:id="@+id/cb_reg_dog" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dog" />
+        <CheckBox android:id="@+id/cb_reg_cat" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cat" />
+        <CheckBox android:id="@+id/cb_reg_bird" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bird" />
+        <CheckBox android:id="@+id/cb_reg_reptile" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Reptile" />
+        <CheckBox android:id="@+id/cb_reg_fish" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Fish" />
+        <CheckBox android:id="@+id/cb_reg_rodent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rodent" />
+        <CheckBox android:id="@+id/cb_reg_rabbit" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rabbit" />
+        <CheckBox android:id="@+id/cb_reg_arachnid" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Arachnid" />
+
+        <Button
+            android:id="@+id/btn_submit_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register as Sitter"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+</ScrollView>

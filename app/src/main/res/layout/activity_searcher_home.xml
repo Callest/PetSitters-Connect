@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com"
+    xmlns:tools="http://schemas.android.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <!-- 1. Title -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search For Sitter"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 2. Location Section -->
+    <TextView
+        android:id="@+id/tv_location_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOCATION"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+        <RadioButton
+            android:id="@+id/rb_gps"
+            android:text="GPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb_zip"
+            android:text="ZIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <!-- 3. Animal Section Header -->
+    <TextView
+        android:id="@+id/tv_animal_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANIMAL"
+        android:textStyle="bold" />
+
+    <!-- 4. Row of Symmetrical Icons (80dp each) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <!-- 1. DOG BUTTON (The standard) -->
+        <ImageButton
+            android:id="@+id/btn_dog"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="20dp"
+            android:src="@drawable/dog"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <!-- 2. CAT BUTTON (Added extra padding to shrink the tall cat) -->
+        <ImageButton
+            android:id="@+id/btn_cat"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:padding="24dp"
+            android:src="@drawable/cat"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <!-- 3. OTHER PAW BUTTON -->
+        <ImageButton
+            android:id="@+id/btn_other"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:padding="22dp"
+            android:src="@drawable/other"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+    </LinearLayout>
+
+    <!-- 5. Main Search Button -->
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search for Sitters"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_be_sitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Be a Sitter"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton" />
+</LinearLayout>
