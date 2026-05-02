@@ -50,9 +50,9 @@
             android:name=".MessageActivity"
             android:parentActivityName=".SitterProfileActivity" />
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     </application>
 </manifest>
