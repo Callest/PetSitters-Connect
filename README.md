@@ -4,3 +4,4 @@ Allows pet lovers to watch over and interact with animals while helping their co
 People will able to look up certain pets they have and see who in their local area is able to look after them.
 They can also leave a review for their favorite sitter, so other people can see how amazing they are.
 *Due to Google Warnings about a bought API usage, GPS will be down till other means is filled*
+*Changes have been made to work with OSM for GPS*
