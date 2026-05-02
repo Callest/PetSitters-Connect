@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com"
+    xmlns:app="http://android.com"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- The Map Fragment - ID MUST BE @+id/map -->
-    <androidx.fragment.app.FragmentContainerView
+    <!-- CHANGED: Replaced Google Fragment with OSM MapView -->
+    <org.osmdroid.views.MapView
         android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- Your Floating Back Button (If you still want it on screen) -->
+    <!-- Your Floating Back Button (Kept the same) -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_back"
         android:layout_width="wrap_content"
@@ -20,7 +19,7 @@
         android:layout_gravity="top|start"
         android:layout_margin="16dp"
         app:srcCompat="@android:drawable/ic_menu_revert"
-        app:backgroundTint="@color/white"
+        app:backgroundTint="@android:color/white"
         android:contentDescription="Back" />
 
 </FrameLayout>
